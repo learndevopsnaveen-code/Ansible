@@ -7,10 +7,15 @@
   tasks: 
   - name: print the information
     ansible.builtin.debug:
-      msg: "Hi Iam Naveen Reddy, Learning: {{COURSE}} learing Duration is : {{DURATION}},Trainer : {{TRAINER}} "
+      msg: "Hi Iam Naveen Reddy, Learning: {{COURSE}}, learing Duration is : {{DURATION}},Trainer : {{TRAINER}} "
 
   - name: print the information
     vars: 
       COURSE: "ANSIBLE"
     ansible.builtin.debug:
-      msg: "Hi Iam Naveen Reddy, Learning: {{COURSE}} learing Duration is : {{DURATION}},Trainer : {{TRAINER}} "    
+      msg: "Hi Iam Naveen Reddy, Learning: {{COURSE}}, learing Duration is : {{DURATION}},Trainer : {{TRAINER}} "    
+
+  - name: print the information
+    vars: 
+    ansible.builtin.debug:
+      msg: "Hi Iam Naveen Reddy, Learning: {{COURSE}}, learing Duration is : {{DURATION}},Trainer : {{TRAINER}} "    
